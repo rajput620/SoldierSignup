@@ -61,6 +61,29 @@ app.post("/api/soldier", (req, res) => {
     });
 });
 
+app.post("/api/soldier", (req, res) => {
+    soldierData = req.body;
+
+    res.status(200).json({
+        success: true,
+        message: "Data received successfully"
+    });
+});
+
+app.get("/api/soldier", (req, res) => {
+    res.json(soldierData);
+});
+
+// ADD THIS ROUTE
+app.post("/api/soldier/location", (req, res) => {
+    console.log("Live Location:", req.body);
+
+    res.status(200).json({
+        success: true,
+        message: "Location received"
+    });
+});
+
 // Send soldier data to dashboard
 app.get("/api/soldier", (req, res) => {
     res.status(200).json(soldierData);
