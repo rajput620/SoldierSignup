@@ -1,4 +1,4 @@
-const SERVER_URL = 'fetch("/api/soldier")';
+const SERVER_URL = "/api/soldier";;
 
 let distressPopupShown = false; // To track if the popup is currently shown
 
@@ -176,7 +176,7 @@ document.getElementById("clear-history").addEventListener("click", function () {
 document.addEventListener("DOMContentLoaded", updateHistoryTable);
 
 // Chat functionality
-const socket = io("http://localhost:5000");
+const socket = io("https://soldiersignup.onrender.com");
 const myId = location.href.includes("dashboard") ? "commandDashboard" : "soldierDevice";
 const otherId = myId === "commandDashboard" ? "soldierDevice" : "commandDashboard";
 

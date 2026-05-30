@@ -1,4 +1,4 @@
-const socket = io.connect('http://yourserver.com'); // Replace with your WebSocket server URL
+const socket = io.connect('https://soldiersignup.onrender.com'); // Replace with your WebSocket server URL
 
 // Toggle chat interface visibility
 function toggleChatInterface() {
