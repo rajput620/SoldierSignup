@@ -1,4 +1,4 @@
-const SERVER_URL = 'http://localhost:3001/api/soldier';
+const SERVER_URL = 'fetch("/api/soldier")';
 
 let distressPopupShown = false; // To track if the popup is currently shown
 
