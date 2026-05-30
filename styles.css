@@ -1,0 +1,1063 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, li, a, form, input, button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    background-image: url('1499641.jpg'), linear-gradient(to bottom right, #1a3c40, #122f34); /* Background image */
+    background-size: cover;
+  
+  
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* About Section with Navy Aesthetic */
+#about {
+    background-color: #1e2a47;  /* Navy Blue background */
+    background-image: url('navy-pattern.jpg'); /* Optional background image with nautical theme */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    color: white;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about h2 {
+    color: #f4f4f4; /* Lighter shade for the heading */
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#about p {
+    color: #d1d1d1;  /* Lighter text color for readability */
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+/* Auth Container */
+.auth-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Positioning the auth container to the upper middle */
+.center-content {
+    position: absolute;
+    top: 30%; /* Adjust this value to position it higher or lower */
+    left: 50%;
+    transform: translate(-50%, -30%); /* Keeps it centered horizontally and adjusts vertically */
+}
+
+/* Title Styling */
+.auth-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form Layout */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.auth-container input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.auth-container button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-container button:hover {
+    background-color: #34495e;
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.auth-container p a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .auth-container {
+        padding: 15px;
+    }
+
+    .auth-container button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Key Features Section with Airforce Aesthetic */
+#features {
+    background-color: #e6f1f7;  /* Light sky blue background */
+    background-image: url('airforce-pattern.jpg'); /* Add an Airforce-themed pattern/image */
+    background-size: cover;
+    background-position: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#features h2 {
+    color: #2c3e50; /* Dark color for the title */
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#features p {
+    color: #34495e;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#features ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features li {
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for each feature */
+    padding: 15px 30px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #2c3e50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#features li:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transform: translateY(-5px);
+}
+
+#features .btn {
+    display: block;
+    width: 150px;
+    margin: 30px auto 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#features .btn:hover {
+    background-color: #34495e;
+}
+
+
+
+/* Contact Section */
+#contact {
+    background-color: #004aad;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#contact ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#contact ul li a {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+#contact ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* Profile Section */
+#profile {
+    background: linear-gradient(135deg, #2c3e50, #34495e); /* Navy inspired gradient */
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.profile-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-content ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.profile-content ul li strong {
+    color: #ffcc00; /* Gold color for emphasis */
+}
+
+.profile-content button {
+    background-color: #ffcc00; /* Button color matches the theme */
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.profile-content button:hover {
+    background-color: #e6b800; /* Button hover effect */
+}
+
+/* Welcome Text Styling */
+#welcome-text {
+    font-size: 40px; /* Large font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ffcc00; /* Gold color for emphasis */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    #profile {
+        padding: 30px 10px;
+    }
+
+    .profile-content {
+        padding: 20px;
+    }
+
+    .profile-content h2 {
+        font-size: 28px;
+    }
+
+    .profile-content ul li {
+        font-size: 16px;
+    }
+
+    #welcome-text {
+        font-size: 30px; /* Adjust font size on smaller screens */
+    }
+}
+
+
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.modal-content label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.modal-content button:hover {
+    background-color: #00318b;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+
+.toggle-btn {
+    background-color: #004aad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #0059e6;
+}
+
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('123.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #e6b800;
+}
+
+
+
+/* Form Container */
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0059e6;
+}
+
+/* Dashboard page styling */
+.dashboard {
+    text-align: center;
+    padding: 50px;
+}
+
+.dashboard h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.dashboard p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #004aad;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+/* Soldier's Quote Styling */
+.soldier-quote {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ffcc00; /* Adds a stylish golden border */
+    background: linear-gradient(to right, #003366, #002244); /* Elegant navy blue gradient */
+    color: #ffdd44; /* Bright golden color */
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3); /* Subtle glow effect */
+}
+
+/* Quote Symbols */
+.quote-symbol {
+    font-size: 1.5rem;
+    color: #ff9900; /* Orange touch for style */
+}
+
+/* Quote Author */
+.quote-author {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #ffffff; /* White text for better visibility */
+}
+
+
+
+
+
+
+
+
+/* Soldier's Quote Styling */
+.soldier-quote {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 6px solid #ffcc00;
+    background: linear-gradient(to right, #003366, #002244);
+    color: #ffdd44;
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255, 204, 0, 0.3);
+}
+
+/* Quote Symbols */
+.quote-symbol {
+    font-size: 1.5rem;
+    color: #ff9900;
+}
+
+/* Quote Author */
+.quote-author {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+/* Login Container with Animated Border */
+.auth-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid transparent;
+    animation: borderAnimation 3s infinite alternate;
+}
+
+/* Border Animation Effect */
+@keyframes borderAnimation {
+    0% {
+        border-color: #ffcc00; /* Gold */
+        box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+    }
+    50% {
+        border-color: #ff5733; /* Vibrant Orange */
+        box-shadow: 0 0 15px rgba(255, 87, 51, 0.5);
+    }
+    100% {
+        border-color: #33ff57; /* Neon Green */
+        box-shadow: 0 0 15px rgba(51, 255, 87, 0.5);
+    }
+}
+
+/* Positioning the auth container */
+.center-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+/* Login Form Inputs */
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.auth-container button {
+    background-color: #004aad;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.auth-container button:hover {
+    background-color: #003d82;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+    .auth-container {
+        padding: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Soldier Security Page Styling */
+.security-container {
+    text-align: center;
+    max-width: 700px;
+    margin: 50px auto;
+    background: linear-gradient(to right, #1a237e, #0d47a1);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.security-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.8);
+}
+
+.security-content ul {
+    text-align: left;
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.security-content ul li {
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    border-left: 4px solid #ffcc00;
+}
+
+/* Animated Text Effect */
+.animated-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffdd44;
+    animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Proceed Button */
+#proceed-btn {
+    background: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+#proceed-btn:hover {
+    background: #ffdd44;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Light & Enhanced Background for Soldier Security Page */
+.security-bg {
+    background: linear-gradient(135deg, #fff3e0, #ffebcc, #fff7e6); /* Light Indian Flag-inspired shades */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Security Container with Elegant Styling */
+.security-container {
+    background: rgba(255, 255, 255, 0.85); /* Soft transparent white */
+    padding: 35px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffcc00; /* Subtle border for visibility */
+}
+
+/* Animated Security Quote */
+.animated-text {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f00; /* Deep saffron color */
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Proceed Button */
+#proceed-btn {
+    background: linear-gradient(to right, #ff6f00, #ffcc00);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+#proceed-btn:hover {
+    background: linear-gradient(to right, #ffcc00, #ff6f00);
+    transform: scale(1.05);
+}
+
+/* Keyframes for Fading Text */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Security List for Maximum Visibility */
+.security-list {
+    text-align: left;
+    font-size: 20px;  /* Increased Font Size */
+    font-weight: bold;
+    color: #ffffff;  /* Default White Text */
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    padding: 15px;
+    border-radius: 8px;  
+    line-height: 1.8;
+    list-style: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Text Shadow for Better Contrast */
+}
+
+/* Bullet Points Styling */
+.security-list li {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+}
+
+/* Bullet Icon */
+.security-list li::before {
+    content: "⚔️";  /* Military/Soldier Icon */
+    font-size: 22px;
+    margin-right: 10px;
+    color: #ff9800; /* Orange (Saffron) for Visibility */
+}
+
+/* Light Mode Text Adjustment */
+body:not(.dark-mode) .security-list {
+    color: #1b1b1b; /* Dark Text for Light Mode */
+    background: rgba(255, 255, 255, 0.9); /* Light Background */
+}
+
+
+
+
+
+
+
+
+/* List Container - Adding Background & Padding */
+.security-content ul {
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808); /* Indian Flag Gradient */
+    padding: 20px;
+    border-radius: 10px;
+    color: #000000; /* Ensuring High Contrast Text */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Each List Item */
+.security-content ul li {
+    padding: 10px;
+    color: #000000; /* Black for readability */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7); /* Light Shadow for Visibility */
+}
+
+/* Jai Hind Special Highlight */
+.security-content ul li:last-child {
+    color: #ffcc00; /* Golden Yellow */
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/* Background for Soldier Security Page */
+.security-bg {
+    background: linear-gradient(to bottom, #f8f9fa, #ddeeff, #cce7ff); /* Light Blue Gradient */
+    color: #000000; /* Ensuring High Contrast Text */
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container Styling */
+.security-container {
+    background: rgba(255, 255, 255, 0.9); /* Slight Transparency */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft Shadow */
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+}
+
+/* Title Styling */
+.security-container h1 {
+    color: #003366; /* Dark Blue */
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Paragraph & List Styling */
+.security-content p, .security-content ul {
+    color: #222222; /* High Visibility */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Button Styling */
+#proceed-btn {
+    background: linear-gradient(to right, #ff9933, #ffffff, #138808); /* Indian Flag Theme */
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#proceed-btn:hover {
+    background: linear-gradient(to right, #cc7700, #dddddd, #0f6d08);
+}
+
+
+
+
+
+
+
+
+
+
+/* Soldier History Section */
+#soldier-history {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Hidden Section */
+.hidden {
+    display: none;
+}
+
+/* History Table */
+#history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#history-table th, #history-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#history-table th {
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    color: black;
+}
+
+/* View History Button */
+#view-history-btn {
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808);
+    color: black;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Clear History Button */
+#clear-history {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+

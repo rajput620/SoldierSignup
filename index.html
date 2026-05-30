@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldier Health & Position Tracking System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="features.js" defer></script>   
+    <script src="profile.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Soldier Health & Position Tracking System</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="login.html">Log In</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Welcome to the Soldier Health & Position Tracking System</h2>
+            <p>Real-time tracking of soldier location and health metrics for enhanced safety and situational awareness.</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-content">
+            <h2>About the Soldier Health & Position Tracking System</h2>
+            <p>
+                SHPTS is a comprehensive system designed to track the real-time location and health status of soldiers during missions. 
+                It combines advanced technology to ensure safety, provide situational awareness, and enable timely support in emergencies.
+            </p>
+            <h3>Why SHPTS?</h3>
+            <p>
+                In modern military operations, real-time information is crucial. SHPTS not only provides commanders with the location of their troops 
+                but also monitors their physical health. This dual functionality ensures operational efficiency and the well-being of soldiers in the field.
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="features-content">
+            <h2>Key Features</h2>
+            <p>Explore the cutting-edge features of SHPTS that make it indispensable for military operations:</p>
+            <ul>
+                <li><strong>Real-Time GPS Tracking:</strong> Pinpoint soldier locations in real time for precise mission execution.</li>
+                <li><strong>Health Monitoring:</strong> Continuously tracks vital health parameters such as heart rate, temperature, and stress levels.</li>
+                <li><strong>Distress Signals:</strong> Allows soldiers to send emergency alerts to the command center with one touch.</li>
+                <li><strong>Centralized Dashboard:</strong> View comprehensive data for multiple soldiers in an easy-to-use interface.</li>
+                <li><strong>Data Security:</strong> Employs military-grade encryption to protect sensitive data.</li>
+            </ul>
+            <button class="toggle-btn" id="more-features-btn">See More</button>
+            <div id="extra-features" style="display: none;">
+                <h3>Additional Features</h3>
+                <ul>
+                    <li><strong>Offline Mode:</strong> Allows data recording even without internet connectivity, syncing automatically when back online.</li>
+                    <li><strong>Weather Insights:</strong> Displays localized weather conditions to help soldiers adapt during missions.</li>
+                    <li><strong>Battery Management:</strong> Alerts soldiers and commanders about device battery status.</li>
+                    <li><strong>Integration Ready:</strong> Easily integrates with other military systems for better coordination.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+<section id="profile">
+    <div class="profile-content">
+        <h2>User Profile</h2>
+        <p id="welcome-text">Welcome, <strong>Gaurav</strong>!</p>
+        <ul>
+            <li><strong>Email:</strong> gaurav@gmail.com</li>
+            <li><strong>Rank:</strong> Sergeant</li>
+            <li><strong>Unit:</strong> Bravo Squad</li>
+            <li><strong>Slogan:</strong> Bharat Mata Ki Jai</li>
+        </ul>
+        <button id="edit-profile-btn">Edit Profile</button>
+    </div>
+</section>
+
+
+.52
+    <!-- Edit Profile Modal -->
+    <div id="edit-profile-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Edit Profile</h2>
+            <form id="edit-profile-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="Gaurav" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" value="gaurav@gmail.com" required>
+
+                <label for="rank">Rank:</label>
+                <input type="text" id="rank" value="Sergeant" required>
+
+                <label for="unit">Unit:</label>
+                <input type="text" id="unit" value="Bravo Squad" required>
+
+                <button type="submit">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us using the information below:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:support@shpts.com">support@shpts.com</a></li>
+                <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+                <li><strong>Address:</strong> 1234 Soldier Safety Blvd, Secure City, SC 56789</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Soldier Health & Position Tracking System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+

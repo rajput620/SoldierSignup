@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soldier Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+</head>
+<body>
+
+    <header>
+        <!-- Slogan with Satyamev Jayate Logo on both sides -->
+        <div class="slogan">
+            <img src="national-emblem-of-india-satyamev-jayate-vector-25883.jpg" alt="Satyamev Jayate" class="satyamev-logo">
+            <div class="slogan-text">
+                <h2 class="bold-text">Tracking Every Step. Protecting Every Soldier</h2>
+                <p class="bold-text">Your safety and mission success are our top priority. Real-time health and position tracking at your fingertips.</p>
+            </div>
+            <img src="national-emblem-of-india-satyamev-jayate-vector-25883.jpg" alt="Satyamev Jayate" class="satyamev-logo">
+        </div>
+
+        <!-- Menu Button (Left Side) & Soldier Dashboard Title -->
+        <div class="menu-container">
+            <button id="menu-btn" class="menu-icon">
+                <img src="Flag_of_India.png" alt="Indian Flag" width="30" height="20">
+            </button>
+            
+            <span><h2 class="dashboard-title">Soldier Dashboard</h2></span>
+        </div>
+
+        <!-- Dark Mode Toggle Button -->
+        <button id="dark-mode-toggle">🌙 Dark Mode</button>
+    </header>
+
+    <body class="dashboard-bg">
+
+
+    <!-- Dropdown Menu (Initially hidden) -->
+    <div id="menu-dropdown" class="dropdown-menu hidden">
+        <ul>
+            <li><a href="#soldier-overview" class="menu-item">Soldier Overview</a></li>
+            <li><a href="#health-metrics" class="menu-item">Health Metrics</a></li>
+            <li><a href="#location-info" class="menu-item">Location Information</a></li>
+            <li><a href="#distress-signal" class="menu-item">Distress Signal</a></li>
+            <li><a href="#environmental-data" class="menu-item">Environmental Data</a></li>
+            <li><a href="#battery-status" class="menu-item">Battery/Device Status</a></li>
+            <li><a href="#alerts-summary" class="menu-item">Alerts & Notifications</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="soldier-overview" class="dashboard-section">
+            <h2>Soldier Overview</h2>
+            <div>
+                <p><strong>Name:</strong> <span id="soldier-name">Loading...</span></p>
+                <p><strong>Unit:</strong> <span id="soldier-unit">Loading...</span></p>
+                <p><strong>Rank:</strong> <span id="soldier-rank">Loading...</span></p>
+                <p><strong>Current Mission:</strong> <span id="soldier-mission">Loading...</span></p>
+            </div>
+        </section>
+
+
+        <section id="health-metrics" class="dashboard-section">
+            <h2>Health Metrics</h2>
+            <p><strong>Heart Rate:</strong> <span id="heart-rate">Loading...</span></p>
+            <p><strong>Body Temperature:</strong> <span id="body-temperature">Loading...</span></p>
+            <p><strong>Oxygen Levels:</strong> <span id="oxygen-levels">Loading...</span></p>
+            <p><strong>Blood Pressure:</strong> <span id="blood-pressure">Loading...</span></p>
+        </section>
+
+
+
+        <section id="distress-section" class="dashboard-section" style="display: none;">
+            <!-- Initially hidden -->
+        </section>
+
+
+        <section id="location-info" class="dashboard-section">
+            <h2>Location Information</h2>
+            <p><strong>GPS Position:</strong> <span id="gps-position">Loading...</span></p>
+            <p><strong>Area of Operations:</strong> <span id="area-ops">Loading...</span></p>
+            <p><strong>Last Movement:</strong> <span id="last-movement">Loading...</span></p>
+        </section>
+        <div id="map" style="height: 500px; margin-top: 10px;"></div>
+
+ 
+
+        <section id="environmental-data" class="dashboard-section">
+            <h2>Environmental Data</h2>
+            <p><strong>Weather Conditions:</strong> <span id="weather-conditions">Loading...</span></p>
+            <p><strong>Hazard Alerts:</strong> <span id="hazard-alerts">Loading...</span></p>
+        </section>
+
+
+
+
+
+        <section id="battery-status" class="dashboard-section">
+            <h2>Battery/Device Status</h2>
+            <p><strong>Device Battery:</strong> <span id="device-battery">Loading...</span></p>
+            <p><strong>Connectivity:</strong> <span id="connectivity-status">Loading...</span></p>
+        </section>
+
+
+
+
+       
+        
+<!-- Soldier History Section -->
+<section id="soldier-history" class="dashboard-section">
+    <h2>📜 Soldier History</h2>
+    <p>Click below to save and view stored soldier data:</p>
+
+    <button id="save-soldier-btn">💾 Save Soldier Data</button>
+    <button id="view-history-btn">📖 View Soldier History</button>
+
+    <div id="history-content" class="hidden">
+        <table id="history-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Rank</th>
+                    <th>Unit</th>
+                    <th>Mission</th>
+                    <th>Heart Rate</th>
+                    <th>Oxygen</th>
+                    <th>Blood Pressure</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Stored soldier data will be inserted here -->
+            </tbody>
+        </table>
+
+        <button id="clear-history">🗑 Clear History</button>
+    </div>
+</section>
+
+
+<section id="live-chat" class="dashboard-section">
+    <h2>💬 Live Chat</h2>
+    <div id="chat-window" style="height: 200px; overflow-y: scroll; border: 1px solid #ccc; padding: 10px; background: #f9f9f9;"></div>
+    <p id="typing-indicator" style="font-style: italic; color: gray; margin: 5px 0;"></p>
+    <input type="text" id="chat-input" placeholder="Type your message..." />
+    <button id="send-chat-btn">Send</button>
+    <button id="clear-chat-btn">Clear</button>
+</section>
+
+
+
+
+
+        
+<section id="alerts-summary" class="dashboard-section">
+    <h2>Alerts & Notifications Summary</h2>
+    
+    <div class="alert-category">
+        <strong>Critical Alerts (Red):</strong>  
+        <p>High-priority conditions such as distress signal triggered, critical health metrics, and geofence violations.</p>
+    </div>
+
+    <div class="alert-category">
+        <strong>Medium Alerts (Yellow):</strong>  
+        <p>Warnings that require attention, including abnormal health metrics, extreme weather conditions, and extended inactivity.</p>
+    </div>
+
+    <div class="alert-category">
+        <strong>Low Alerts (Green):</strong>  
+        <p>Routine updates like battery status, normal weather updates, and periodic health check-ins.</p>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Soldier Health & Position Tracking System. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="https://cdn.socket.io/4.6.1/socket.io.min.js"></script>
+    <script src="dashboard.js"></script>
+    <script src="menu.js"></script>
+    
+</body>
+</html>

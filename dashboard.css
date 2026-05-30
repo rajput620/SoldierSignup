@@ -1,0 +1,750 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3d, #003366); /* Navy gradient background */
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    background-color: #004080; /* Navy blue */
+    color: white;
+    padding: 1rem;
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space between elements (menu button & slogan) */
+    position: relative; /* For absolute positioning of menu container */
+}
+
+/* Menu button container (positioned at top-left) */
+.menu-container {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+/* Menu button styling */
+#menu-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Slogan styling */
+header .slogan {
+    text-align: center;
+    flex-grow: 1; /* Center slogan by taking available space */
+}
+
+header .slogan h2 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+header .slogan p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Dropdown Menu (hidden by default) */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    background-color: #004080; /* Navy blue */
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu .menu-item {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #003366;
+}
+
+.dropdown-menu .menu-item:hover {
+    background-color: #003366; /* Darker navy */
+}
+
+/* Hidden class to hide the dropdown menu */
+.hidden {
+    display: none;
+}
+
+/* Main content */
+.main {
+    padding: 2rem;
+}
+
+/* Dashboard sections */
+.dashboard-section {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: white; /* White background for dashboard section */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    color: #333; /* Dark text for contrast */
+}
+
+/* Data Cards inside dashboard */
+.data-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f9f9f9; /* Light gray background for data cards */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Data card title */
+.data-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #004080; /* Navy blue text for card titles */
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header elements vertically */
+        padding: 1rem;
+    }
+
+    .menu-container {
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+
+    header .slogan {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        top: 4rem; /* Adjust for mobile */
+    }
+
+    .dashboard-section {
+        padding: 1.5rem;
+    }
+}
+
+/* Distress Section */
+.dashboard-section .distress-active {
+    background: #d9534f; /* Red for distress */
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.dashboard-section .distress-active h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Distress Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #d9534f; /* Red for distress */
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.popup button {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #003366;
+}
+
+/* Styling for the login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001f3d, #003366); /* Navy gradient background */
+}
+
+.login-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#login-form input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #004080; /* Navy blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: #003366; /* Darker navy */
+}
+
+
+
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #001f3d, #003366);
+    color: #fff;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: linear-gradient(to bottom, #121212, #1a1a1a);
+    color: #ffffff;
+}
+
+.dark-mode .dashboard-section {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #1e1e1e;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark-mode #dark-mode-toggle {
+    background: #bbb;
+    color: #222;
+}
+
+
+
+
+
+
+
+/* Ensuring alerts work in both Light and Dark mode */
+:root {
+    --background-light: #ffffff;
+    --text-light: #333;
+    --border-light: #ccc;
+    
+    --background-dark: #001f3d;
+    --text-dark: #fff;
+    --border-dark: #004aad;
+
+    --critical-bg: rgba(255, 0, 0, 0.1);
+    --critical-border: #ff4444;
+
+    --medium-bg: rgba(255, 255, 0, 0.1);
+    --medium-border: #ffd700;
+
+    --low-bg: rgba(0, 255, 0, 0.1);
+    --low-border: #4caf50;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-dark);
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light Mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--background-light);
+        color: var(--text-light);
+    }
+}
+
+/* Alerts Styling */
+.alert-category {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 6px solid;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+/* Critical Alert */
+.critical-alert {
+    background: var(--critical-bg);
+    border-left-color: var(--critical-border);
+    color: var(--text-dark);
+}
+
+/* Medium Alert */
+.medium-alert {
+    background: var(--medium-bg);
+    border-left-color: var(--medium-border);
+    color: var(--text-dark);
+}
+
+/* Low Alert */
+.low-alert {
+    background: var(--low-bg);
+    border-left-color: var(--low-border);
+    color: var(--text-dark);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .alert-category {
+        padding: 10px;
+    }
+}
+
+
+
+/* Slogan Section Styling */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;  /* Space between logo and text */
+    text-align: center;
+}
+
+/* Logo Styling */
+.satyamev-logo {
+    width: 60px;  /* Adjust size */
+    height: auto;
+    display: block;
+    filter: brightness(1.2); /* Slight highlight effect */
+}
+
+/* Responsive Adjustment */
+@media screen and (max-width: 768px) {
+    .slogan {
+        flex-direction: column;
+        text-align: center;
+    }
+    .satyamev-logo {
+        width: 50px; /* Slightly smaller on mobile */
+    }
+}
+
+
+
+
+
+
+
+/* =======================
+   Soldier Dashboard Header Enhancements (Smaller & More Visible)
+   ======================= */
+   .menu-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between button and text */
+    padding: 5px 15px; /* Reduce padding for a smaller look */
+}
+
+/* 🛠️ Improved Visibility of "Soldier Dashboard" (Smaller) */
+.menu-container h2 {
+    font-size: 1.2rem; /* Reduced font size */
+    font-weight: 700; /* Semi-bold for readability */
+    color: #ffffff; /* White for contrast */
+    text-transform: uppercase; /* Uniform look */
+    font-family: 'Arial', sans-serif; /* Professional font */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Slight glow */
+    letter-spacing: 1px; /* Tighter spacing */
+}
+
+/* 🛠️ Smaller & Clear Menu Button */
+#menu-btn {
+    background: rgba(255, 255, 255, 0.2); /* Light transparency */
+    border: 2px solid white; /* Thinner border */
+    color: white;
+    font-size: 1.5rem; /* Slightly reduced size */
+    font-weight: 700; /* Semi-bold */
+    padding: 5px 10px;
+    border-radius: 6px; /* Slightly rounded corners */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 3px 8px rgba(255, 255, 255, 0.2); /* Subtle glow */
+}
+
+/* 🛠️ Hover Effect for Menu Button */
+#menu-btn:hover {
+    background-color: white;
+    color: #004080;
+    border: 2px solid #004080;
+    box-shadow: 0px 3px 12px rgba(255, 255, 255, 0.4); /* Soft glow */
+}
+
+/* 🛠️ Dark Mode & Light Mode Adjustments */
+@media (prefers-color-scheme: dark) {
+    .menu-container h2 {
+        text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.7); /* Subtle glow for dark mode */
+    }
+
+    #menu-btn {
+        border-color: white;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    #menu-btn:hover {
+        background-color: #ffffff;
+        color: #002855;
+        border-color: #ffffff;
+        box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add an Ashoka Chakra-inspired subtle pattern */
+.slogan::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 139, 0.6) 5%, rgba(255, 255, 255, 0) 60%);
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* Apply Indian Flag Colors to Entire Page */
+body {
+    background: linear-gradient(to bottom, #FF9933, white, #138808);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Section */
+.header, .navbar, .top-bar {
+    background: linear-gradient(to right, #FF9933, white, #138808);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* All Containers & Sections */
+.container, .dashboard-section, .sidebar, .footer {
+    background: linear-gradient(to right, #FF9933, white, #138808);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Buttons */
+button, .btn {
+    background: linear-gradient(to right, #FF9933, white, #138808);
+    border: none;
+    color: black;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Make text readable on the tricolor background */
+h1, h2, h3, h4, p, span {
+    color: #000; /* Black text for visibility */
+}
+
+
+
+/* Footer with Light Blue Shade for Visibility */
+footer {
+    background-color: #4A90E2; /* Light blue for visibility in both modes */
+    color: white; /* Keeps text readable */
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+
+#dark-mode-toggle {
+    background: linear-gradient(to right, #FF9933, white, #138808); /* Saffron, White, Green */
+    color: black; /* Ensures text is visible */
+    border: 2px solid #000080; /* Navy blue border (for Ashoka Chakra reference) */
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect for better UI */
+#dark-mode-toggle:hover {
+    background: linear-gradient(to right, #FF6600, white, #0B6623); /* Slightly darker shades */
+}
+
+
+
+
+
+
+
+
+/* Default (Light Mode) - Indian Flag Theme */
+#dark-mode-toggle {
+    background: linear-gradient(to right, #FF9933, white, #138808); /* Saffron, White, Green */
+    color: black; /* Visible in light mode */
+    border: 2px solid #000080; /* Navy blue (Ashoka Chakra reference) */
+    padding: 8px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect for better UI */
+#dark-mode-toggle:hover {
+    background: linear-gradient(to right, #FF6600, white, #0B6623); /* Slightly darker shades */
+}
+
+/* Dark Mode - Button */
+.dark-mode #dark-mode-toggle {
+    background: linear-gradient(to right, #222, #555, #222); /* Dark gradient */
+    color: white;
+    border: 2px solid #888; /* Soft contrast */
+}
+
+/* Dark Mode - Hover Effect */
+.dark-mode #dark-mode-toggle:hover {
+    background: linear-gradient(to right, #111, #333, #111);
+}
+
+
+
+
+
+
+
+
+.bold-slogan {
+    font-weight: bold; /* Make text bold */
+    font-size: 1.8rem; /* Adjust size */
+    text-align: center;
+    background: linear-gradient(to right, #FF9933, white, #138808); /* Indian flag gradient */
+    
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.slogan-text {
+    text-align: center;
+    margin: 10px 0;
+}
+
+#dark-mode-toggle {
+    background: linear-gradient(to right, #FFD480, #ffffff, #A1D490); /* Lighter Indian flag colors */
+    color: black;
+    font-weight: bold;
+    padding: 6px 12px; /* Further reduced padding */
+    border: none; 
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 12px; /* Smaller text */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Lighter shadow */
+}
+
+#dark-mode-toggle:hover {
+    background: linear-gradient(to right, #FFCC66, #f9f9f9, #8BC34A); /* Slightly richer gradient */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+
+
+
+
+/* Alternative: If you don't want an image and prefer a colorful border */
+body {
+    border: 15px solid;
+    border-image-source: linear-gradient(to right, #556B2F, #8F9779, #4B5320, #6B8E23); /* Green military shades */
+    border-image-slice: 1;
+}
+
+
+
+
+
+
+/* Slogan Section */
+.slogan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right, #FF9933, #FFFFFF, #138808); /* Indian Flag Colors */
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Bold Text */
+.bold-text {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Smaller Soldier Dashboard Title & Shift to Right */
+.dashboard-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000080;
+    margin-left: 50px;
+}
+
+
+/* Make Menu Button Smaller */
+.small-menu {
+    font-size: 16px; /* Smaller Icon */
+    padding: 6px 10px; /* Adjust Button Size */
+    background-color: #004aad; /* Dark Navy Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.small-menu:hover {
+    background-color: #00318b; /* Slightly Darker on Hover */
+}
+
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between button and text */
+    padding-left: 10px; /* Move entire container slightly to the left */
+}
+
+.dashboard-title {
+    margin-left: -5px; /* Move text slightly to the left */
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+/* Add this in your main dashboard CSS */
+.alert-distress {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 2px solid red;
+    animation: flash 1s infinite;
+}
+@keyframes flash {
+    0%, 100% { border-color: red; }
+    50% { border-color: transparent; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
